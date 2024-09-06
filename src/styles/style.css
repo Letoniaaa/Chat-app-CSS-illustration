@@ -32,6 +32,7 @@ body{
     font-size: 16px;
     font-family: rubi;
     height: 100vh;
+    position: fixed
 }
 
 .roxo{
@@ -56,7 +57,7 @@ body{
     border-top-left-radius: 400px;
     position: absolute;
     bottom: 0px;
-    right: -200px;
+    right: -1600px;
 }
 
 .container{
@@ -68,13 +69,13 @@ body{
     position: absolute;
     left: 250px;
     border-radius: 20px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .borda{
     background-color: white;
     width: 270px;
-    height: 470px;
+    height: 530px;
     border-radius: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -92,7 +93,7 @@ body{
 .celular{
     background-color: var(--LightGrayishViolet);
     width: 250px;
-    height: 450px;
+    height: 510px;
     border-radius: 20px;
     position: absolute;
     left: 10px;
@@ -123,7 +124,7 @@ body{
     border: white 1.5px solid;
 }
 
-h5{
+h2{
     color: white;
     font-size: 12px;
     font-weight: 600;
@@ -230,26 +231,61 @@ h6{
 
 .valor{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     background-color: aquamarine;
     margin-top: 10px;
-    width: 200px;
+    width: 190px;
     padding: 10px;
     border-radius: 13px 13px 13px 3px;
+    background: hsla(264, 98%, 61%, 1);
+    background: linear-gradient(180deg, hsla(264, 98%, 61%, 1) 28%, hsla(291, 100%, 63%, 1) 85%);
+    background: -moz-linear-gradient(180deg, hsla(264, 98%, 61%, 1) 28%, hsla(291, 100%, 63%, 1) 85%);
+    background: -webkit-linear-gradient(180deg, hsla(264, 98%, 61%, 1) 28%, hsla(291, 100%, 63%, 1) 85%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8a3bfd", endColorstr="#e342ff", GradientType=1 );
+}
+
+.ri-circle-line{
+    color: rgba(255, 255, 255, 0.644);
 }
 
 h3{
-    font-size: 12px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: 400;
+}
+
+h4{
+    color: white;
+    position: absolute;
+    right: 60px;
 }
 
 .msg{
-    background-color: chartreuse;
-    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 230px;
     padding: 10px;
     margin-top: 10px;
     border-radius: 20px;
+}
+
+h5{
+    color: rgba(196, 196, 196, 0.616);
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.enviar{
+    background-color: var(--VeryDarkDesaturatedViolet);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    padding: 3px;
+    color: white;
 }
 
 .tex{
@@ -257,13 +293,15 @@ h3{
 }
 
 h1{
-    color: black;
+    color: var(--VeryDarkDesaturatedViolet);
     font-size: 30px;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .texto{
-    color: var(--GrayishBlue);
+    color: hsl(0, 0%, 57%);
+    line-height: 25px;
 }
 
 
