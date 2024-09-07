@@ -26,13 +26,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body{
     font-size: 16px;
     font-family: rubi;
     height: 100vh;
-    position: fixed
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .roxo{
@@ -57,7 +59,7 @@ body{
     border-top-left-radius: 400px;
     position: absolute;
     bottom: 0px;
-    right: -1600px;
+    right: -150px;
 }
 
 .container{
@@ -111,7 +113,7 @@ body{
     background: -moz-linear-gradient(360deg, hsla(264, 98%, 61%, 1) 0%, hsla(291, 100%, 63%, 1) 100%);
     background: -webkit-linear-gradient(360deg, hsla(264, 98%, 61%, 1) 0%, hsla(291, 100%, 63%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8A3BFD", endColorstr="#E342FF", GradientType=1 );
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .ri-arrow-left-s-line{
@@ -304,4 +306,43 @@ h1{
     line-height: 25px;
 }
 
+@media screen and (max-width: 600px) {
 
+    body{
+        font-size: 16px;
+        font-family: rubi;
+    }
+
+    .roxo{
+        position: absolute;
+        left: -300px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -30px;
+        gap: 0px;
+        
+    }
+
+    .borda{
+        position: relative;
+        left: 0px;
+    }
+
+    .tex{
+        text-align: center;
+        padding: 60px;
+    }
+
+    .claro{
+        position: absolute;
+        right: -300px;
+        bottom: -300px;
+    }
+
+}
